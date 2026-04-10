@@ -165,8 +165,8 @@ body {
 
 /* Hero Section Styles */
 .hero {
-    padding: 80px 0;
-    margin: 60px 0;
+    padding: 150px 0;
+    margin: 0;
     min-height: 600px;
     display: flex;
     align-items: center;
@@ -454,20 +454,10 @@ body {
     }
 }
 
-/* Smooth scrolling */
-html {
-    scroll-behavior: smooth;
-}
-
-/* Add some spacing for the fixed header */
-body {
-    padding-top: 80px;
-}
-
 /* About Section Styles */
 .about-section {
-    padding: 80px 0;
-    margin: 60px 0;
+    padding: 0px 0;
+    margin: 0;
 }
 
 .container {
@@ -664,8 +654,8 @@ body {
 
 /* Services Section Styles */
 .services-section {
-    padding: 80px 0;
-    margin: 60px 0;
+    padding: 150px 0;
+    margin: 0;
 }
 
 .services-header {
@@ -692,6 +682,7 @@ body {
     font-size: 14px;
     font-weight: 600;
     color: black;
+    text-align: center;
 }
 
 .services-title {
@@ -851,13 +842,165 @@ body {
 
 /* Projects Section Styles */
 .projects-section {
-    padding: 80px 0;
-    margin: 60px 0;
+    padding: 150px 0;
+    margin: 0;
 }
 
 .projects-header {
     text-align: center;
     margin-bottom: 60px;
+}
+
+.projects-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #f0f4ff;
+    padding: 8px 16px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.projects-badge img {
+    width: 20px;
+    height: 20px;
+}
+
+.projects-badge span {
+    font-size: 14px;
+    font-weight: 600;
+    color: black;
+    text-align: center;
+}
+
+
+.subscription-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 60px;
+    border-radius: 30px;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    margin-top: 450px;
+}
+
+.subscription-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1181px;
+    height: 591px;
+    object-fit: cover;
+    border-radius: 50px;
+    opacity: 1;
+    z-index: 0;
+}
+
+
+.subscription-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background: #4F61FF;
+    border: 1px solid rgba(79, 97, 255, 0.3);
+    padding: 12px 24px;
+    border-radius: 25px;
+    margin-bottom: 40px;
+    position: relative;
+    z-index: 1;
+    backdrop-filter: blur(10px);
+}
+
+.subscription-badge img {
+    width: 18px;
+    height: 18px;
+}
+
+.subscription-badge span {
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+
+}
+
+.subscription-title {
+    font-size: 55px;
+    font-weight: 600;
+    color: white;
+    line-height: 1.2;
+    margin: 0 0 20px 0;
+    position: relative;
+    z-index: 1;
+}
+
+.subscription-description {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.6;
+    margin: 0 auto 50px auto;
+    max-width: 800px;
+    position: relative;
+    z-index: 1;
+}
+
+.subscription-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.btn-join {
+    background: #4F61FF;
+    color: white;
+    padding: 18px 30px;
+    border-radius: 12px;
+    text-decoration: none;
+    border: 1px solid rgba(79, 97, 255, 0.3);
+    font-weight: 600;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 25px rgba(79, 97, 255, 0.3);
+    width: 157px;
+    height: 50px;
+}
+
+.btn-join:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 35px rgba(79, 97, 255, 0.4);
+    background: transparent;
+    border-color: rgba(255, 255, 255, 0.5);
+
+}
+
+.btn-contact {
+    background: transparent;
+    color: white;
+    padding: 18px 30px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+    width: 157px;
+    height: 50px;
+}
+
+.btn-contact:hover {
+    background: #4F61FF;
+    border-color: #4F61FF;
+    transform: translateY(-3px);
 }
 
 .btn-projects {
@@ -886,6 +1029,7 @@ body {
     color: black;
     line-height: 1.2;
     margin: 0 0 20px 0;
+    text-align: center;
 }
 
 .projects-description {
@@ -894,6 +1038,8 @@ body {
     line-height: 1.6;
     margin: 0 auto;
     max-width: 910px;
+    text-align: center;
+    margin-bottom: 70px;
 }
 
 .projects-grid {
@@ -970,6 +1116,24 @@ body {
     border-radius: 25px;
 }
 
+.project-content:hover {
+    background-color: #4F61FF;
+}
+
+.project-content:hover .project-title {
+    color: white;
+}
+
+.project-content:hover .project-description {
+    color: white;
+}
+
+.project-content:hover .btn-learn-more {
+    background: #f0f4ff;
+    transform: translateY(-2px);
+    color: #4F61FF;
+}
+
 .project-title {
     font-size: 20px;
     font-weight: 600;
@@ -999,8 +1163,9 @@ body {
 }
 
 .btn-learn-more:hover {
-    background: #3a4fd8;
+    background: #f0f4ff;
     transform: translateY(-2px);
+    color: #4F61FF;
 }
 
 .project-large {
@@ -1073,4 +1238,320 @@ body {
     .project-large {
         height: 300px;
     }
+}
+
+/* Responsive Design for Subscription Section */
+@media (max-width: 768px) {
+    .subscription-section {
+        padding: 60px 0;
+        margin: 40px 0;
+    }
+    
+    .subscription-container {
+        padding: 60px 40px;
+        margin: 0 20px;
+    }
+    
+    .subscription-title {
+        font-size: 36px;
+    }
+    
+    .subscription-description {
+        font-size: 16px;
+        margin-bottom: 40px;
+    }
+    
+    .subscription-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    
+    .btn-join, .btn-contact {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .subscription-section {
+        padding: 40px 0;
+        margin: 30px 0;
+    }
+    
+    .subscription-container {
+        padding: 40px 30px;
+        margin: 0 15px;
+        border-radius: 20px;
+    }
+    
+    .subscription-title {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+    
+    .subscription-description {
+        font-size: 15px;
+        margin-bottom: 30px;
+    }
+    
+    .subscription-badge {
+        margin-bottom: 30px;
+        padding: 6px 16px;
+    }
+    
+    .subscription-badge span {
+        font-size: 13px;
+    }
+    
+    .btn-join, .btn-contact {
+        padding: 15px 30px;
+        font-size: 15px;
+    }
+}
+
+/* Experts Section Styles */
+.experts-section {
+    padding: 150px 0;
+    margin: 0;
+}
+
+.experts-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.experts-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #f0f4ff;
+    padding: 8px 16px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.experts-badge img {
+    width: 20px;
+    height: 20px;
+}
+
+.experts-badge span {
+    font-size: 14px;
+    font-weight: 600;
+    color: black;
+    text-align: center;
+}
+
+.experts-title {
+    font-size: 55px;
+    font-weight: 600;
+    color: black;
+    line-height: 1.2;
+    margin: 0 0 20px 0;
+    text-align: center;
+}
+
+.experts-description {
+    font-size: 18px;
+    color: black;
+    line-height: 1.6;
+    margin: 0 auto;
+    max-width: 1000px;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+/* Expert Cards Styles */
+.experts-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.expert-card {
+    position: relative;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.expert-card:hover {
+    transform: translateY(-10px);
+}
+
+
+
+.expert-image {
+    width: 373px;
+    height: 439px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.expert-card:hover .expert-image {
+    transform: scale(1.05);
+}
+
+.expert-card:hover .expert-name {
+    color: black;
+}
+
+.expert-card:hover .expert-title {
+    color: black;
+}
+
+.expert-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 30px 20px 20px;
+    text-align: center;
+    width: 246px;
+    height: 105px;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(3px);
+    border-radius: 20px;
+    margin-left: 110px;
+    margin-bottom: 20px;
+}
+
+.expert-name {
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    line-height: 1.2;
+    text-align: left;
+}
+
+.expert-title {
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.9);
+    margin: 0;
+    font-weight: 400;
+    text-align: left;
+}
+
+
+/* Expert Social Media Icons */
+.expert-social-icons {
+    position: absolute;
+    left: 23px;
+    top: 75%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    z-index: 10;
+}
+
+.expert-social-icon {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #4F61FF;
+    border-radius: 50%;
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(79, 97, 255, 0.3);
+}
+
+.expert-social-icon:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 12px rgba(79, 97, 255, 0.4);
+    background: #3d4ee8;
+}
+
+.expert-social-icon i {
+    font-size: 18px;
+}
+
+
+/* Responsive Design for Experts Section */
+@media (max-width: 768px) {
+    .experts-section {
+        padding: 60px 0;
+    }
+    
+    .experts-title {
+        font-size: 36px;
+    }
+    
+    .experts-description {
+        font-size: 16px;
+        margin-bottom: 50px;
+    }
+    
+    .experts-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+    
+    .expert-image-container {
+        height: 350px;
+    }
+    
+    .expert-name {
+        font-size: 20px;
+    }
+    
+    .expert-title {
+        font-size: 14px;
+    }
+    
+    .expert-social-icons {
+        left: -15px;
+        gap: 8px;
+    }
+    
+    .expert-social-icon {
+        width: 35px;
+        height: 35px;
+    }
+    
+    .expert-social-icon i {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .experts-section {
+        padding: 40px 0;
+    }
+    
+    .experts-title {
+        font-size: 28px;
+    }
+    
+    .experts-description {
+        font-size: 15px;
+        margin-bottom: 40px;
+    }
+    
+    .experts-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .expert-image-container {
+        height: 300px;
+    }
+    
+    .expert-overlay {
+        padding: 25px 15px 15px;
+    }
+    
+    .expert-name {
+        font-size: 18px;
+    }
+    
+    .expert-title {
+        font-size: 13px;
+    }
+
 }
