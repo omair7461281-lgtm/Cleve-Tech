@@ -1377,9 +1377,7 @@ body {
     transition: all 0.3s ease;
 }
 
-.expert-card:hover {
-    transform: translateY(-10px);
-}
+
 
 
 
@@ -1390,17 +1388,6 @@ body {
     transition: transform 0.3s ease;
 }
 
-.expert-card:hover .expert-image {
-    transform: scale(1.05);
-}
-
-.expert-card:hover .expert-name {
-    color: black;
-}
-
-.expert-card:hover .expert-title {
-    color: black;
-}
 
 .expert-overlay {
     position: absolute;
@@ -1416,6 +1403,10 @@ body {
     border-radius: 20px;
     margin-left: 110px;
     margin-bottom: 20px;
+}
+
+.expert-overlay:hover {
+    background: #4F61FF;
 }
 
 .expert-name {
@@ -1438,8 +1429,8 @@ body {
 /* Expert Social Media Icons */
 .expert-social-icons {
     position: absolute;
-    left: 23px;
-    top: 75%;
+    left: 21px;
+    top: 74%;
     transform: translateY(-50%);
     display: flex;
     flex-direction: column;
@@ -1448,8 +1439,8 @@ body {
 }
 
 .expert-social-icon {
-    width: 48px;
-    height: 48px;
+    width: 55px;
+    height: 55px;
     display: flex;
     align-items: center;
     justify-content: center;
