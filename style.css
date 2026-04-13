@@ -3276,10 +3276,11 @@ body {
     .subscribe-box .subscribe-input {
         padding: 12px 6px;
         font-size: 14px;
+        width: 192px;
     }
 
     .subscribe-box .subscribe-btn {
-        padding: 12px 24px;
+        padding: 12px 14px;
         font-size: 14px;
     }
 
