@@ -87,6 +87,64 @@ document.addEventListener('DOMContentLoaded', function () {
         lastScrollTop = scrollTop;
     });
 
+    // Smooth scrolling and active navigation
+    const navLinks = document.querySelectorAll('.navmenu a[href^="#"]');
+    const sections = document.querySelectorAll('section[id]');
+
+    // Smooth scrolling for navigation links
+    navLinks.forEach(link => {
+        link.addEventListener('click', function (e) {
+            e.preventDefault();
+            
+            const targetId = this.getAttribute('href');
+            const targetSection = document.querySelector(targetId);
+            
+            if (targetSection) {
+                const headerHeight = header.offsetHeight;
+                const targetPosition = targetSection.offsetTop - headerHeight - 20;
+                
+                window.scrollTo({
+                    top: targetPosition,
+                    behavior: 'smooth'
+                });
+                
+                // Update active state
+                updateActiveLink(targetId);
+            }
+        });
+    });
+
+    // Update active link on scroll
+    function updateActiveLink(targetId) {
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === targetId) {
+                link.classList.add('active');
+            }
+        });
+    }
+
+    // Check which section is in view and update active link
+    function setActiveOnScroll() {
+        const scrollPosition = window.pageYOffset + header.offsetHeight + 100;
+        
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.offsetHeight;
+            const sectionId = '#' + section.getAttribute('id');
+            
+            if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                updateActiveLink(sectionId);
+            }
+        });
+    }
+
+    // Listen for scroll events to update active navigation
+    window.addEventListener('scroll', setActiveOnScroll);
+    
+    // Set active link on page load
+    setActiveOnScroll();
+
     // Testimonial Slider functionality with smooth sliding
     const testimonialsWrapper = document.querySelector('.testimonials-wrapper');
     const testimonialCards = document.querySelectorAll('.testimonial-card');

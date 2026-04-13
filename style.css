@@ -267,7 +267,7 @@ body {
     .contact-container,
     .testimonials-container,
     .faqs-container {
-        padding: 30px 15px;
+        padding: 0px 0px;
     }
 
     /* Form improvements */
@@ -337,6 +337,9 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 50px 20px;
+}
+.contact-container {
+    padding: 20px 20px;
 }
 
 .footer-container {
@@ -909,6 +912,9 @@ body {
     .about-left {
         order: 2;
         position: static;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
     }
 
     .about-right {
@@ -918,14 +924,53 @@ body {
     }
 
     .image-row {
+        display: flex;
         flex-direction: column;
-        align-items: center;
         gap: 15px;
+        width: 100%;
     }
+
+    .image-card.top-card {
+        width: 48%;
+        border-radius: 12px;
+        overflow: hidden;
+    }
+
+    .image-card.top-card img {
+        width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 12px;
+        margin-bottom: 20px;
+    }
+
+    .stat-title {
+        margin-bottom: -40px;
+    }
+
+
 
     .image-card2 {
         position: static;
-        margin-top: 20px;
+        margin-top: -162px;
+        margin-left: 52%;
+        width: 48%;
+        border-radius: 12px;
+        overflow: hidden;
+    }
+
+    .image-card2 img {
+        width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 12px;
+    }
+
+    .stats-card.bottom-card {
+        width: 48%;
+        height: 131px;
+        padding: 25px;
+        margin-top: -150px;
     }
 
     .about-badge {
@@ -935,11 +980,15 @@ body {
     }
 
     .about-title {
-        font-size: 32px;
+        font-size: 22px;
     }
 
     .stat-number {
-        font-size: 36px;
+        font-size: 26px;
+    }
+    .stat-description {
+        font-size: 12px;
+        line-height: 1.2;
     }
 }
 
@@ -1079,7 +1128,22 @@ body {
 /* Responsive Design for Services Section */
 @media (max-width: 768px) {
     .services-section {
-        padding: 60px 0;
+        padding: 0px 0;
+    }
+    .projects-container {
+        padding: 0px 0px;
+    }
+    .experts-container {
+        padding: 0px 0px;
+    }
+    .pricing-container {
+        padding: 0px 0px;
+    }
+    .testimonials-container {
+        padding: 0px 20px;
+    }
+    .faqs-container {
+        padding: 0px 20px;
     }
 
     .services-title {
@@ -1101,12 +1165,13 @@ body {
         width: 100%;
         height: auto;
         min-height: 120px;
+        gap: 0px;
     }
 }
 
 @media (max-width: 480px) {
     .services-section {
-        padding: 40px 0;
+        padding: 0px 0;
     }
 
     .services-title {
@@ -2038,7 +2103,7 @@ body {
 /* Responsive Design for Experts Section */
 @media (max-width: 768px) {
     .experts-section {
-        padding: 60px 0;
+        padding: 0px 0;
     }
 
     .experts-title {
@@ -2109,7 +2174,7 @@ body {
 
 @media (max-width: 480px) {
     .experts-section {
-        padding: 40px 0;
+        padding: 0px 0;
     }
 
     .experts-title {
@@ -2330,7 +2395,7 @@ body {
 /* Responsive Design for Pricing Section */
 @media (max-width: 768px) {
     .pricing-section {
-        padding: 60px 0;
+        padding: 0px 0;
     }
 
     .pricing-title {
@@ -2377,7 +2442,7 @@ body {
 
 @media (max-width: 480px) {
     .pricing-section {
-        padding: 40px 0;
+        padding: 0px 0;
     }
 
     .pricing-title {
@@ -2611,7 +2676,7 @@ body {
 
 @media (max-width: 480px) {
     .contact-section {
-        padding: 60px 0;
+        padding: 0px 0;
     }
     
     .contact-left {
@@ -2816,7 +2881,7 @@ body {
 
 @media (max-width: 480px) {
     .faqs-section {
-        padding: 40px 0;
+        padding: 0px 0;
     }
 
     .faqs-title {
