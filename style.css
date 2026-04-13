@@ -3231,7 +3231,7 @@ body {
     }
 
     .subscribe-box .subscribe-form {
-        gap: 15px;
+        gap: 5px;
         align-items: stretch;
     }
 
@@ -3274,7 +3274,7 @@ body {
     }
 
     .subscribe-box .subscribe-input {
-        padding: 12px 16px;
+        padding: 12px 6px;
         font-size: 14px;
     }
 
