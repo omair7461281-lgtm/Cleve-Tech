@@ -240,8 +240,6 @@ body {
 
     #header {
         padding: 12px 15px;
-                background-color: rgba(79, 97, 255, 0.2);
-        backdrop-filter: blur(10px);
     }
 
     .navmenu {
