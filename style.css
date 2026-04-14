@@ -805,6 +805,17 @@ body {
     position: relative;
 }
 
+/* Desktop and Mobile About Content Visibility */
+.desktop-about-content {
+    display: none;
+}
+
+.mobile-about-image {
+    width: 100%;
+    height: auto;
+    border-radius: 14px;
+}
+
 .image-row {
     display: flex;
     align-items: flex-start;
@@ -2146,8 +2157,8 @@ body {
 
     .expert-image {
         width: 100%;
-        height: auto;
-        max-height: 400px;
+        height: 439px;
+        max-height: 450px;
         object-fit: cover;
     }
 
@@ -2173,7 +2184,7 @@ body {
     .expert-social-icons {
         justify-content: center;
         gap: 10px;
-        margin-top: 210px;
+        margin-top: 240px;
         top: auto;
         transform: none;
     }
