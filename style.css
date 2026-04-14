@@ -2952,7 +2952,7 @@ body {
 }
 
 .Fore {
-    font-size: 18px;
+    font-size: 17px;
     color: #000000;
     margin: 0;
 }
@@ -3068,7 +3068,7 @@ body {
     }
 
     .footer-title {
-        font-size: 16px;
+        font-size: 20px;
     }
 
     .footer-list a {
@@ -3106,17 +3106,17 @@ body {
 
 .subscribe-box .subscribe-form {
     display: flex;
-    gap: 12px;
+    gap: 5px;
     align-items: center;
 }
 
 .subscribe-box .subscribe-input {
     padding: 15px 20px;
-    border: 2px solid #333;
+    border: 2px solid #4F61FF;
     border-radius: 8px;
     font-size: 16px;
     outline: none;
-    width: 252px;
+    width: 220px;
     height: 45px;
 }
 
@@ -3132,14 +3132,13 @@ body {
     background: #4F61FF;
     color: white;
     border: none;
-    padding: 15px 30px;
     border-radius: 10px;
     font-size: 16px;
     font-weight: 600;
     cursor: pointer;
     transition: all 0.3s ease;
     white-space: nowrap;
-    width: 151px;
+    width: 100px;
     height: 45px;
 }
 
@@ -3194,6 +3193,21 @@ body {
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
+}
+
+.bi-geo-alt::before {
+    content: "\f271";
+    font-size: 20px;
+}
+
+.bi-envelope::before {
+    content: "\f0e0";
+    font-size: 20px;
+}
+
+.bi-telephone::before {
+    content: "\f879";
+    font-size: 20px;
 }
 
 /* Responsive Design for Bottom Contact Section */
@@ -3275,4 +3289,28 @@ body {
         font-size: 18px;
         width: 20px;
     }
+}
+
+/* Copyright Container Styles */
+.copyright {
+    text-align: center;
+    padding: 10px 0;
+    border-top: 1px solid #4f61ff;
+    margin-top: 30px;
+}
+
+.copyright p {
+    margin: 0;
+    color: black;
+    font-size: 16px;
+}
+
+.copyright a {
+    color: #4F61FF;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.copyright a:hover {
+    text-decoration: underline;
 }
