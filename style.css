@@ -159,6 +159,7 @@ body {
         justify-content: space-between;
         align-items: center;
         gap: 1rem;
+        
     }
 
     .mobile-nav-toggle {
@@ -239,10 +240,12 @@ body {
 
     #header {
         padding: 12px 15px;
+                background-color: rgba(79, 97, 255, 0.2);
+        backdrop-filter: blur(10px);
     }
 
     .navmenu {
-        top: 65px;
+        top: 64px;
         max-height: calc(100vh - 70px);
     }
 
