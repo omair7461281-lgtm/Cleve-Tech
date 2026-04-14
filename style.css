@@ -490,9 +490,17 @@ body {
     border-radius: 12px;
 }
 
+.desktop-image {
+    display: block;
+}
+
+.mobile-image {
+    display: none;
+}
+
 .vector {
     position: absolute;
-    bottom: 225px;
+    bottom: 217px;
     right: 443px;
     width: 89px;
     height: 93px;
@@ -540,7 +548,7 @@ body {
 
 .trusted-clients {
     position: absolute;
-    bottom: -470px;
+    bottom: -477px;
     right: -213px;
     background: white;
     padding: 7px 7px;
@@ -649,14 +657,20 @@ body {
         min-height: 300px;
     }
 
-    .team-image {
+    .mobile-image {
         width: 100%;
         height: auto;
-        max-width: 330px;
+        max-width: 350px;
         border-radius: 12px;
         display: block;
         margin: 0 auto;
     }
+
+    .desktop-image {
+        display: none;
+    }
+
+
 
     .vector {
         position: absolute;
@@ -665,27 +679,28 @@ body {
         width: 55px;
         height: 56px;
         border-radius: 14px;
+        display: none;
     }
 
     .social-icons {
         position: absolute;
         top: 0px;
-        left: 0px;
+        left: 20px;
         display: flex;
         gap: 10px;
         background: #FFFFFF;
-        padding: 14px;
+        padding: 10px;
         border-radius: 99px;
         box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-        width: 100px;
-        height: 43px;
+        width: 98px;
+        height: 40px;
         z-index: 10;
     }
 
     .trusted-clients {
     position: absolute;
-    bottom: -297px;
-    left: 165%;
+    bottom: -300px;
+    left: 169%;
     transform: translateX(-50%);
     background: white;
     padding: 10px 15px;
@@ -695,6 +710,7 @@ body {
     height: auto;
     min-width: 130px;
     z-index: 10;
+    display: none;
 }
 .social-icon {
     width: 20px;
